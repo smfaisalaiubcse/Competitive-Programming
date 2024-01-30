@@ -1,0 +1,1 @@
+{"name":"Local: Subset GCD","url":"d:\\Visual Studio Code\\Subset GCD.cpp","tests":[{"id":1706107274670,"input":"3\n3 2\n3 3\n4 2","output":"2 3\n1 2 3\n2 4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Visual Studio Code\\Subset GCD.cpp","group":"local","local":true}

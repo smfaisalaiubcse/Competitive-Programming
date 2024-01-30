@@ -1,0 +1,1 @@
+{"name":"Local: Lexical_analyzer","url":"d:\\Visual Studio Code\\Compiler\\Lexical_analyzer.cpp","tests":[{"id":1700917413975,"input":"1a = ab + b11v;","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Visual Studio Code\\Compiler\\Lexical_analyzer.cpp","group":"local","local":true}

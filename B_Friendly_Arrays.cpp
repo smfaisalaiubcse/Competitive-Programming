@@ -1,0 +1,64 @@
+#include <bits/stdc++.h>
+#define IO                            \
+    ios_base::sync_with_stdio(false); \
+    cin.tie(NULL);                    \
+    cout.tie(NULL)
+typedef unsigned long int ll;
+#define int long long
+typedef long double LD;
+#define all(x) x.begin(), x.end()
+#define rall(x) x.rbegin(), x.rend()
+#define w(t)     \
+    int t;       \
+    cin >> t;    \
+    while (t--)  \
+    {            \
+        solve(); \
+    }
+using namespace std;
+
+void calculatePrefixSum(vector<int> &arr, vector<int> &pref)
+{
+    int n = arr.size();
+    for (int i = 0; i < n; i++)
+    {
+        if (i == 0)
+        {
+            pref[i] = arr[i];
+        }
+        else
+        {
+            pref[i] = arr[i] + pref[i - 1];
+        }
+    }
+}
+
+void solve()
+{
+    ll n, m, b, A1 = 0, A = 0, B = 0;
+    cin >> n >> m;
+    vector<ll> a(n);
+    for (ll i = 0; i < n; i++)
+        cin >> a[i];
+    for (ll i = 0; i < m; i++)
+    {
+        cin >> b;
+        B |= b;
+    }
+    for (ll i = 0; i < n; i++)
+    {
+        A ^= a[i];
+        A1 ^= (a[i] | B);
+    }
+    if (n % 2 == 0)
+        cout << A1 << " " << A << endl;
+    else
+        cout << A << " " << A1 << endl;
+}
+int32_t main()
+{
+    IO;
+    // solve();
+    w(t);
+    return 0;
+}
