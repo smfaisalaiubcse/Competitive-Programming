@@ -16,13 +16,11 @@ typedef long double LD;
         solve(); \
     }
 using namespace std;
-int N = 1e5+10;
-int dp[N];
-int 
 
-int func(int n) {
-    if(n == 0) return 0;
-    if(dp)
+int accumulate(vector<int> &arr) {
+    int n = arr.size(), sum = 0;
+    for (int i = 0; i < n; i++) sum += arr[i];
+    return sum;
 }
 
 void solve()
