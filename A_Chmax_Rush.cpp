@@ -2,7 +2,8 @@
 using namespace std;
 
 const int MOD = 998244353;
-
+void fun(){
+}
 int main() {
     int N, Q;
     cin >> N >> Q;
